@@ -4,7 +4,7 @@
 
 # Metrolist
 
-### YouTube Music client for Android
+### YouTube Music client for Androids
 
 <br/>
 
