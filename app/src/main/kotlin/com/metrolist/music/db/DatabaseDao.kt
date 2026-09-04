@@ -1182,7 +1182,6 @@ interface DatabaseDao {
             songsToInsert.forEach { (id, setVideoId) ->
                 val existingSong = getSongByIdBlocking(id)!!
                 if (existingSong.song.inLibrary == null) {
-                    inLibrary(id, now)
                 }
                 insert(
                     PlaylistSongMap(
@@ -1198,7 +1197,6 @@ interface DatabaseDao {
             songsToInsert.forEach { (id, setVideoId) ->
                 val existingSong = getSongByIdBlocking(id)!!
                 if (existingSong.song.inLibrary == null) {
-                    inLibrary(id, now)
                 }
                 insert(
                     PlaylistSongMap(
